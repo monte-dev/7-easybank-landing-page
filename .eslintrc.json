@@ -8,16 +8,11 @@
         "ecmaVersion": 2015
     },
     "rules": {
-        "indent": [
-            "error",
-            2
-        ],
         "linebreak-style": [
             "off"
         ],
         "quotes": [
-            "error",
-            "single",
+            "off",
             {"allowTemplateLiterals": true}
         ],
         "semi": [
