@@ -41,15 +41,24 @@ $base-size: 18px;
   
 
 
-@mixin flex($flex-direction, $align-items, $justify-content) {
+@mixin flex($flex-direction,$justify-content, $align-items) {
 	display: flex;
 	flex-direction: $flex-direction;
-	align-items: $align-items;
 	justify-content: $justify-content;
+	align-items: $align-items;
 }
 @mixin center() {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+
+// 
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
 }

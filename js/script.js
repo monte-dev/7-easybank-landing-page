@@ -34,16 +34,13 @@ getLocalData();
 function generateLinks(responseData) {
 	// top navigation links
 	let headerLinksWrapper = document.querySelector(".header-links");
-	let headerLinks = templates.linksHeader({link: responseData.headerLinks});
+	let headerLinks = templates.linksHeader({ link: responseData.headerLinks });
 	headerLinksWrapper.innerHTML = headerLinks;
-	
-	console.log(headerLinks);
-	
+
 	// footer links
 	let footerLinksWrapper = document.querySelector(".footer-nav");
-	let footerLinks = templates.linksFooter({link: responseData.footerLinks});
+	let footerLinks = templates.linksFooter({ link: responseData.footerLinks });
 	footerLinksWrapper.innerHTML = footerLinks;
-		
 }
 
 function generateArticles(responseData) {
@@ -56,3 +53,19 @@ function generateServices(responseData) {
 	let html = templates.servicesContent({ service: responseData.services });
 	container.innerHTML = html;
 }
+
+// mobile hamburger menu
+
+const hamburgerIcon = document.querySelector("#hamburger-show");
+const menuWrapper = document.querySelector(".header-links");
+hamburgerIcon.addEventListener("click", () => {
+	if (menuWrapper.classList.contains("show")) {
+		menuWrapper.classList.remove("show");
+		menuWrapper.classList.add("hide");
+	} else if (menuWrapper.classList.contains("hide")) {
+		menuWrapper.classList.remove("hide");
+		menuWrapper.classList.add("show");
+	} else {
+		menuWrapper.classList.add("show");
+	}
+});

@@ -5,64 +5,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon">
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 
 <body>
   <nav>
-    <div class="logo">
-      <img src="images/logo.svg" alt="logo">
-    </div>
-    <div class="header-links">
-    </div>
-    <button type="text">Request Invite</button>
+    <div class="container">
 
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="header-links">
+      </div>
+      <button type="text">Request Invite</button>
+      <button type="button" id="hamburger-show"><img src="/images/icon-hamburger.svg" alt="mobile menu opening"></button>
+    </div>
   </nav>
+  <header>
+    <div class="container">
 
 
-  Next generation digital banking
+      Next generation digital banking
 
-  Take your financial life online. Your Easybank account will be a one-stop-shop
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
-
-
-
-  Why choose Easybank?
-
-  We leverage Open Banking to turn your bank account into your financial hub. Control
-  your finances like never before.
-
-
-
-  <div class="services-wrapper">
-  </div>
-  <div class="articles-wrapper">
-  </div>
-  <div class="footer-nav">
-  </div>
-  Latest Articles
-
-
-  <!-- create in template -->
-
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
-
+      Take your financial life online. Your Easybank account will be a one-stop-shop
+      for spending, saving, budgeting, investing, and much more.
+      <button type="text">Request Invite</button>
+    </div>
+  </header>
+  <main>
+    <section id="services">
+      <div class="container">
+        <h2 class="section-heading">Why choose Easybank?</h2>
+        <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never
+          before.</p>
+        <div class="services-wrapper">
+        </div>
+      </div>
+    </section>
+    <section id="articles">
+      <div class="container">
+        <h2 class="section-heading">Latest Articles</h2>
+        <div class="articles-wrapper">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-action">
+      <img src="/images/logo.svg" alt="logo">
+      <ul>
+        <li><a href="#"><img src="images/icon-facebook.svg" alt="facebbok icon"></a></li>
+        <li><a href="#"><img src="images/icon-youtube.svg" alt="youtube"></a></li>
+        <li><a href="#"><img src="images/icon-twitter.svg" alt="twitter icon"></a></li>
+        <li><a href="#"><img src="images/icon-pinterest.svg" alt="pinterest icon"></a></li>
+        <li><a href="#"><img src="images/icon-instagram.svg" alt="instagram icon"></a></li>
+      </ul>
+      </div>
+      <div class="footer-nav">
+      </div>
+      <div class="div">
+        <button type="text">Request Invite</button>
+        <p class="copyright">© Easybank. All Rights Reserved<p/>
+      </div>
+    </div>
+  </footer>
   <script id="template-header-links" type="text/x-handlebars-template">
     <div id="nav-links">
-      <ul>
-        {{#each link }}
-          <li>
-          <a href="#">{{this}}</a>
-          </li>
-        {{/each}}
-      </ul>
-    </div>
-    <div id="mobile-menu">
       <ul>
         {{#each link }}
           <li>

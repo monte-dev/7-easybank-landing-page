@@ -9,3 +9,20 @@ body {
     font-family: $main-font;
     font-size: $base-size;
 }
+
+nav {
+    background: $White;
+}
+header, #articles {
+    background: $Very-Light-Gray;
+}
+#services {
+    background: $Light-Grayish-Blue;
+}
+footer {
+    background: $dark-blue;
+}
+.container {
+    margin: auto;
+    max-width: 1024px;
+}
