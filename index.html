@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Easybank landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  
 </head>
+
 <body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="header-links">
+    </div>
+    <button type="text">Request Invite</button>
 
-  Home
-  About
-  Contact
-  Blog
-  Careers
-
-  Request Invite
-
+  </nav>
 
 
   Next generation digital banking
 
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
+  Take your financial life online. Your Easybank account will be a one-stop-shop
   for spending, saving, budgeting, investing, and much more.
 
   Request Invite
@@ -38,40 +31,46 @@
 
   Why choose Easybank?
 
-  We leverage Open Banking to turn your bank account into your financial hub. Control 
+  We leverage Open Banking to turn your bank account into your financial hub. Control
   your finances like never before.
 
-  
- 
 
-<div class="header-links">
-</div>
-<div class="services-wrapper">
-</div>
-<div class="articles-wrapper">
-</div>
-<div class="footer-nav">
-</div>
+
+  <div class="services-wrapper">
+  </div>
+  <div class="articles-wrapper">
+  </div>
+  <div class="footer-nav">
+  </div>
   Latest Articles
 
-  
-<!-- create in template -->
+
+  <!-- create in template -->
 
 
   Request Invite
 
   © Easybank. All Rights Reserved
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
   <script id="template-header-links" type="text/x-handlebars-template">
-    <ul>
-      <li>
-    <a href="#">{{this}}</a>
-      </li>
-    </ul>
+    <div id="nav-links">
+      <ul>
+        {{#each link }}
+          <li>
+          <a href="#">{{this}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div id="mobile-menu">
+      <ul>
+        {{#each link }}
+          <li>
+          <a href="#">{{this}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
   </script>
 
   <script id="template-services-content" type="text/x-handlebars-template">
@@ -97,13 +96,16 @@
 
   <script id="template-footer-links" type="text/x-handlebars-template">
     <ul>
+    {{#each link }}
       <li>
-    <a href="#">{{this}}</a>
+      <a href="#">{{this}}</a>
       </li>
-    </ul>
+    {{/each}}
+  </ul>
   </script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>

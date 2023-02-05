@@ -1,0 +1,32 @@
+
+// Mobile Menu
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .header-links ul {
+    display: flex;
+    list-style: none;
+  }
+  #nav-links {
+    display: none;
+  
+  }
+  #mobile-menu {
+    display: block;
+  }
+nav button {
+  @include btn($gradient, $White, $White);
+}
+  
+  @media screen and (min-width: 768px) {
+    #nav-links {
+      display: flex;
+    }
+    #mobile-menu {
+      display: none;
+    }
+  }

@@ -34,16 +34,16 @@ getLocalData();
 function generateLinks(responseData) {
 	// top navigation links
 	let headerLinksWrapper = document.querySelector(".header-links");
-	let headerLinks = responseData.headerLinks;
-	for (let link of headerLinks) {
-		headerLinksWrapper.innerHTML += templates.linksHeader(link);
-	}
+	let headerLinks = templates.linksHeader({link: responseData.headerLinks});
+	headerLinksWrapper.innerHTML = headerLinks;
+	
+	console.log(headerLinks);
+	
 	// footer links
 	let footerLinksWrapper = document.querySelector(".footer-nav");
-	let footerLinks = responseData.footerLinks;
-	for (let link of footerLinks) {
-		footerLinksWrapper.innerHTML += templates.linksFooter(link);
-	}
+	let footerLinks = templates.linksFooter({link: responseData.footerLinks});
+	footerLinksWrapper.innerHTML = footerLinks;
+		
 }
 
 function generateArticles(responseData) {
