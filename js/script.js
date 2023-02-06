@@ -33,7 +33,7 @@ getLocalData();
 
 function generateLinks(responseData) {
 	// top navigation links
-	let headerLinksWrapper = document.querySelector(".header-links");
+	let headerLinksWrapper = document.querySelector(".header-nav-links");
 	let headerLinks = templates.linksHeader({ link: responseData.headerLinks });
 	headerLinksWrapper.innerHTML = headerLinks;
 
@@ -56,7 +56,7 @@ function generateServices(responseData) {
 
 // mobile hamburger menu
 
-const menuWrapper = document.querySelector(".header-links");
+const menuWrapper = document.querySelector(".header-nav-links");
 const hamburgerImg = document.querySelector("#hamburger-img");
 hamburgerImg.addEventListener("click", () => {
 	if (menuWrapper.classList.contains("show")) {
