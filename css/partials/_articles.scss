@@ -1,8 +1,7 @@
 #articles {
 	padding: 80px 0;
 	& .articles-wrapper {
-		display: flex;
-		justify-content: center;
+		@include flex(row, center, unset);
 		gap: 1.5rem;
 		& .article {
 			width: 250px;

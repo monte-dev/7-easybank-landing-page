@@ -4,16 +4,16 @@ header {
 	position: relative;
 	justify-content: space-between;
 	& button {
-		@include btn($gradient, $White, $White);
+		@include btn($gradient, $White, transparent);
 	}
 	& .cta_header {
 		margin-left: 6rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
+		@include flex(column, center, flex-start);
 		max-width: 500px;
 		margin-top: 100px;
+		& h1 {
+			font-weight: 500;
+		}
 		& p {
 			margin: 1rem 0;
 			max-width: 400px;
@@ -37,9 +37,7 @@ header {
 
 @media screen and (max-width: 768px) {
 	header {
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
+		@include flex(column-reverse, center, center);
 
 		& button {
 			margin: 2rem auto;
