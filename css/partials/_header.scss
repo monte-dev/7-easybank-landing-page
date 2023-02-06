@@ -7,7 +7,7 @@ header {
 		@include btn($gradient, $White, $White);
 	}
 	& .cta_header {
-		margin-left: 5rem;
+		margin-left: 6rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -17,6 +17,7 @@ header {
 		& p {
 			margin: 1rem 0;
 			max-width: 400px;
+			color: $Grayish-Blue;
 		}
 	}
 	& .mockup {
@@ -46,9 +47,9 @@ header {
 		& .cta_header {
 			margin: 0;
 			text-align: center;
-      & p {
-        max-width: 100%;
-      }
+			& p {
+				max-width: 100%;
+			}
 		}
 		& .mockup {
 			background-image: url(/images/bg-intro-mobile.svg);

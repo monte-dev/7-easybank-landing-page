@@ -1,0 +1,39 @@
+#services {
+	padding-top: 80px;
+	& .section-heading {
+		font-weight: 600;
+		padding-bottom: 1.5rem;
+	}
+	& p {
+		max-width: 600px;
+		padding-bottom: 2rem;
+		color: $Grayish-Blue;
+	}
+	& .services-wrapper {
+		padding-top: 2rem;
+		display: flex;
+		& div {
+			margin-right: 1rem;
+			& img {
+				padding-bottom: 1.5rem;
+			}
+			& h3 {
+				padding-bottom: 1.5rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+    #services {
+        text-align: center;
+        padding-bottom: 80px;
+
+        & p {
+            margin: auto;
+        }
+    }
+    .services-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

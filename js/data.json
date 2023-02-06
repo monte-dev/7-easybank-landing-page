@@ -21,7 +21,7 @@
     "services": [
         {
             "imgSrc": "images/icon-online.svg",
-            "headingheading": "Online Banking",
+            "heading": "Online Banking",
             "content": "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
         },
         {

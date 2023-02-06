@@ -37,6 +37,7 @@ footer {
 .container {
   margin: auto;
   max-width: 1024px;
+  padding: 0 2rem;
 }
 
 img {
@@ -50,6 +51,7 @@ nav {
   height: 100px;
   z-index: 1;
   width: 100%;
+  padding: 0 2rem;
 }
 
 nav .container {
@@ -169,7 +171,7 @@ header button:hover {
   filter: opacity(0.8);
 }
 header .cta_header {
-  margin-left: 5rem;
+  margin-left: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,6 +182,7 @@ header .cta_header {
 header .cta_header p {
   margin: 1rem 0;
   max-width: 400px;
+  color: rgb(150, 152, 166);
 }
 header .mockup {
   background-image: url(/images/bg-intro-desktop.svg);
@@ -226,5 +229,44 @@ header .mockup div img {
   header .mockup div img {
     margin-left: 50%;
     transform: translate(-50%, 0);
+  }
+}
+#services {
+  padding-top: 80px;
+}
+#services .section-heading {
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+#services p {
+  max-width: 600px;
+  padding-bottom: 2rem;
+  color: rgb(150, 152, 166);
+}
+#services .services-wrapper {
+  padding-top: 2rem;
+  display: flex;
+}
+#services .services-wrapper div {
+  margin-right: 1rem;
+}
+#services .services-wrapper div img {
+  padding-bottom: 1.5rem;
+}
+#services .services-wrapper div h3 {
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  #services {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  #services p {
+    margin: auto;
+  }
+  .services-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

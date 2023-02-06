@@ -6,6 +6,8 @@ left: 0;
 height: 100px;
 z-index: 1;
 width: 100%;
+padding: 0 2rem;
+
 }
 nav .container {
 	@include flex(row, space-between, center);
