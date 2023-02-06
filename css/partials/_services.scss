@@ -1,13 +1,10 @@
 #services {
 	padding-top: 80px;
-	& .section-heading {
-		font-weight: 600;
-		padding-bottom: 1.5rem;
-	}
 	& p {
 		max-width: 600px;
 		padding-bottom: 2rem;
 		color: $Grayish-Blue;
+		font-size: 16px;
 	}
 	& .services-wrapper {
 		padding-top: 2rem;
@@ -20,20 +17,24 @@
 			& h3 {
 				padding-bottom: 1.5rem;
 			}
+			& p {
+				font-size: 16px;
+				line-height: 24px;
+			}
 		}
 	}
 }
 @media screen and (max-width: 900px) {
-    #services {
-        text-align: center;
-        padding-bottom: 80px;
+	#services {
+		text-align: center;
+		padding-bottom: 80px;
 
-        & p {
-            margin: auto;
-        }
-    }
-    .services-wrapper {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+		& p {
+			margin: auto;
+		}
+	}
+	.services-wrapper {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }

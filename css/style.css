@@ -44,6 +44,13 @@ img {
   max-width: 100%;
 }
 
+.section-heading {
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 34px;
+  padding-bottom: 2rem;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -234,14 +241,11 @@ header .mockup div img {
 #services {
   padding-top: 80px;
 }
-#services .section-heading {
-  font-weight: 600;
-  padding-bottom: 1.5rem;
-}
 #services p {
   max-width: 600px;
   padding-bottom: 2rem;
   color: rgb(150, 152, 166);
+  font-size: 16px;
 }
 #services .services-wrapper {
   padding-top: 2rem;
@@ -256,6 +260,10 @@ header .mockup div img {
 #services .services-wrapper div h3 {
   padding-bottom: 1.5rem;
 }
+#services .services-wrapper div p {
+  font-size: 16px;
+  line-height: 24px;
+}
 
 @media screen and (max-width: 900px) {
   #services {
@@ -268,5 +276,72 @@ header .mockup div img {
   .services-wrapper {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+#articles {
+  padding: 80px 0;
+}
+#articles .articles-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#articles .articles-wrapper .article {
+  width: 250px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.15);
+}
+#articles .articles-wrapper .article img {
+  height: 200px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#articles .articles-wrapper .article .article-text {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#articles .articles-wrapper .article .article-text .article-author {
+  color: rgb(150, 152, 166);
+  font-size: 12px;
+}
+#articles .articles-wrapper .article .article-text h3 {
+  font-weight: normal;
+  padding: 1rem 0;
+  font-size: 18px;
+}
+#articles .articles-wrapper .article .article-text h3:hover {
+  cursor: pointer;
+  color: rgb(49, 211, 92);
+}
+#articles .articles-wrapper .article .article-text p:last-of-type {
+  color: rgb(150, 152, 166);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  #articles .section-heading {
+    text-align: center;
+  }
+  #articles .articles-wrapper {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  #articles .articles-wrapper .article {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #articles .articles-wrapper {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  #articles .articles-wrapper .article {
+    width: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
