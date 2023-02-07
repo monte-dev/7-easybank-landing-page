@@ -63,20 +63,18 @@ hamburgerImg.addEventListener("click", () => {
 		menuWrapper.classList.remove("show");
 		menuWrapper.classList.add("hide");
 		document.body.style.overflow = "auto";
-		hamburgerImg.src = 'images/icon-hamburger.svg';
+		hamburgerImg.src = './images/icon-hamburger.svg';
 
 	} else if (menuWrapper.classList.contains("hide")) {
 		menuWrapper.classList.remove("hide");
 		menuWrapper.classList.add("show");
 		document.body.style.overflow = "hidden";
-		hamburgerImg.src = 'images/icon-hamburger.svg';
-		hamburgerImg.src = 'images/icon-close.svg';
+		hamburgerImg.src = './images/icon-hamburger.svg';
+		hamburgerImg.src = './images/icon-close.svg';
 
 	} else {
 		menuWrapper.classList.add("show");
 		document.body.style.overflow = "hidden";
-		hamburgerImg.src = 'images/icon-close.svg';
-
-
+		hamburgerImg.src = './images/icon-close.svg';
 	}
 });

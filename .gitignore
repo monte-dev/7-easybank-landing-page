@@ -128,12 +128,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-README.md
-README-template.md
-style-guide.md
-active-states.jpg
-desktop-design.jpg
-desktop-preview.jpg
-mobile-design.jpg
-mobile-navigation.jpg
